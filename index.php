@@ -16,9 +16,9 @@ include 'config/connexion.php';
     <header>
 
     <div class="navbar">
-    <img class="logo" src="ac-dc.png">
+    <img class="logo" src="images/ac-dc.png">
+    <a href = "traitement/compte.php">Mon compte</a>
   <a href="traitement/login.php">LogIn</a>
-  <a href="config/logout.php">LogOut</a>
     </div>
 
     </header>
