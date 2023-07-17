@@ -44,7 +44,7 @@ include 'config/connexion.php';
             </a>
           </li>
         </ul>
-      </div>
+      </div>https://github.com/lea4203/Spotify/pull/8/conflicts
 
       <div class="navigation">
         <ul>
@@ -54,6 +54,11 @@ include 'config/connexion.php';
               <span>Create Playlist</span>
             </a>
           </li>
+
+    <div class="navbar">
+    <img class="logo" src="images/ac-dc.png">
+    <a href = "traitement/compte.php">Mon compte</a>
+  <a href="traitement/login.php">LogIn</a>
 
           <li>
             <a href="#">
@@ -74,6 +79,7 @@ include 'config/connexion.php';
           </li>
         </ul>
       </div>
+
     </div>
 
     <div class="main-container">
@@ -91,10 +97,16 @@ include 'config/connexion.php';
             </li>
             <li class="divider">|</li>
             <li>
+
               <a href="traitement/login.php">Mon compte</a>
+
+              <a href="../traitement/login.php">Se connecter</a>
+            </li>
+            <li>
+              <a href="../traitement/compte.php">Mon compte</a>
+
             </li>
           </ul>
-          <button action="" type="button">Log In</button>
         </div>
       </div>
 

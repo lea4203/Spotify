@@ -1,32 +1,46 @@
+
 <?php
-session_start();
 
+include '../config/connexion.php';
 
+    echo "ppl2";
+    $query = 'SELECT * FROM user';
+    $userStatement = $baseSpotify->prepare($query);
+    $userStatement -> execute();
+    $users = $userStatement -> fetchAll(PDO::FETCH_ASSOC);
+?>
 
-include_once('../config/connexion.php');
+<?php
+    if (isset($_POST['username'])) {
+        echo "ppl3";
+        foreach ($users as $user) {
+        if ($user['username'] === $_POST['username']) {
+            $loggedUser = [
+                'username' => $user['username']
+            ];
 
-
-
-$username = $_POST['username'];
-
-$query = 'SELECT * FROM user where username = "' . $username . '"';
-$userStatement = $baseSpotify -> prepare($query);
-$userStatement -> execute();
-$user = $userStatement -> fetch(PDO::FETCH_ASSOC);
-
-
-$query = 'INSERT INTO user (username) VALUES ("' . $username . '")';
-$userStatement = $baseSpotify -> prepare($query);
-$userStatement -> execute();
-
-
-if ($user) {
-    $_SESSION['LOGGED_USER'] = $user['username'];
-    header('Location:../index.php');
+                $_SESSION['LOGGED_USER'] = $loggedUser['username'];
+        }
+    }
+    if (!isset($loggedUser)) {
+        echo "ppl4";
+        $username = htmlspecialchars($_POST['username']);
+            $insertStatement = $baseSpotify -> prepare("INSERT INTO user (username) VALUES (:username)");
+            $insertStatement -> execute([
+                'username' => $username,
+                
+            ]);
+    }
 }
+?>
 
-
-
+<?php
+if (isset($_SESSION['LOGGED_USER'])) {
+    echo "ppl5";
+    $loggedUser = [
+        'username' => $_SESSION['LOGGED_USER'],
+    ];
+}
 ?>
 
 <!DOCTYPE html>
@@ -41,7 +55,24 @@ if ($user) {
     <form action="" method="POST">
     <input type="text" name="username" id="username" placeholder="username">
     <input type="submit" value="Se connecter">
+
+<?php if (!isset($loggedUser)): ?>
+    <?=  "ppl6"; ?>
+    <form action="" method="POST">
+        <h2>Connectez-vous </h2>
+    <?php if(isset($errorMessage)) : ?>
+    <?=  "ppl7"; ?>
+
+        <div>
+            <?php echo($errorMessage); ?>
+        </div>
+    <?php endif; ?>
+    <div>
+        <label for="username">Pseudo</label>
+        <input type="text" name="username" id="username">
+    </div>
+    <input type="submit" value="Envoyer">
+
     </form>
-</body>
-</html>
+<?php endif; ?>
 
