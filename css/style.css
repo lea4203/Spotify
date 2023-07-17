@@ -17,6 +17,11 @@
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
   }
+
+  .logo {
+    float: left;
+    
+  }
   
   .dropdown-content a:hover {
     background-color: #ddd;
