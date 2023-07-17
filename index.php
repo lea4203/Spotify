@@ -97,10 +97,12 @@ include 'config/connexion.php';
             </li>
             <li class="divider">|</li>
             <li>
-              <a href="">Mon compte</a>
+              <a href="../traitement/login.php">Se connecter</a>
+            </li>
+            <li>
+              <a href="../traitement/compte.php">Mon compte</a>
             </li>
           </ul>
-          <button action="" type="button">Log In</button>
         </div>
       </div>
 
