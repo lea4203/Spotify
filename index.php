@@ -1,3 +1,8 @@
+<?php
+
+include 'config/connexion.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +16,8 @@
     <header>
 
     <div class="navbar">
-  <a href="config/login.php">LogIn</a>
+    <img class="logo" src="ac-dc.png">
+  <a href="traitement/login.php">LogIn</a>
   <a href="config/logout.php">LogOut</a>
     </div>
 
