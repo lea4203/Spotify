@@ -1,0 +1,43 @@
+<?php
+    include_once('../config/connection.php');
+ 
+    if (!isset($_SESSION['LOGGED_USER'])){
+        include_once('traitement/login.php');
+    }
+    else {
+    $query = 'SELECT * FROM users where username = "' . $_SESSION['LOGGED_USER'] . '"';
+    $userStatement = $baseSpotify -> prepare($query);
+    $userStatement -> execute();
+    $user = $userStatement -> fetch(PDO::FETCH_ASSOC);
+    ?>
+    <div class="d-flex flex-column align-items-center">
+    <h1>Mon compte</h1>
+    <h2>Votre pseudo : <?php echo($user['username']) ?></h2> 
+    
+
+    <form action="traitement/modif-compte.php" method="post" class="d-flex flex-column text-center">
+        <label for="avatar">Changez votre avatar : </label>
+    <select id="avatar" name="avatar">
+        <option value="images/fleur.png">Fleur</option>
+        <option value="images/photo.png">Smiley</option>
+        <option value="images/pierre.png">Pierre</option>
+        <option value="images/pikachu.png">Pikachu</option>
+    </select>
+    <img src="" width="100px"/> 
+    <label for="pseudo">
+    <input type="text" name="pseudo" id="pseudo" value="<?php echo($user['pseudo']);?>">
+    <input type="submit" value="modifier">
+    </form>
+    
+    <script>
+    let image = document.querySelector('img');
+    document.querySelector("select").addEventListener("change", function (e) {
+        let src = e.target.value;
+        image.setAttribute("src", src);
+    });
+</script>
+<br />
+<h4> Vous voulez vous déconnecter ? </h4>
+<a href="traitement/logout.php">Se déconnecter</a>
+</div>
+<?php } ?>
