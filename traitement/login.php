@@ -43,6 +43,19 @@ if (isset($_SESSION['LOGGED_USER'])) {
 }
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="" method="POST">
+    <input type="text" name="username" id="username" placeholder="username">
+    <input type="submit" value="Se connecter">
+
 <?php if (!isset($loggedUser)): ?>
     <?=  "ppl6"; ?>
     <form action="" method="POST">
@@ -59,6 +72,7 @@ if (isset($_SESSION['LOGGED_USER'])) {
         <input type="text" name="username" id="username">
     </div>
     <input type="submit" value="Envoyer">
+
     </form>
 <?php endif; ?>
 

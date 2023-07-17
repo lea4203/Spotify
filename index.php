@@ -97,10 +97,14 @@ include 'config/connexion.php';
             </li>
             <li class="divider">|</li>
             <li>
+
+              <a href="traitement/login.php">Mon compte</a>
+
               <a href="../traitement/login.php">Se connecter</a>
             </li>
             <li>
               <a href="../traitement/compte.php">Mon compte</a>
+
             </li>
           </ul>
         </div>
@@ -184,164 +188,6 @@ include 'config/connexion.php';
         </div>
       </div>
 
-      <div class="spotify-playlists">
-        <h2>Focus</h2>
-        <div class="list">
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Peaceful Piano</h4>
-            <p>Relax and indulge with beautiful piano pieces</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Deep Focus</h4>
-            <p>Keep calm and focus with ambient and pos...</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Instrumental Study</h4>
-            <p>Focus with soft study music in the...</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>chill lofi study beats</h4>
-            <p>The perfect study beats, twenty four...</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Coding Mode</h4>
-            <p>Dedicated to all the programmers out there.</p>
-          </div>
-          
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Focus Flow</h4>
-            <p>Uptempo instrumental hip hop beats.</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Calm Before The Storm</h4>
-            <p>Calm before the storm music.</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Beats to think to</h4>
-            <p>Focus with deep techno and tech house.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="spotify-playlists">
-        <h2>Mood</h2>
-        <div class="list">
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Mood Booster</h4>
-            <p>Get happy with today's dose of feel-good...</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Feelin' Good</h4>
-            <p>Feel good with this positively timeless...</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Dark & Stormy</h4>
-            <p>Beautifully dark, dramatic tracks.</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Feel Good Piano</h4>
-            <p>Happy vibes for an upbeat morning.</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Feelin' Myself</h4>
-            <p>The hip-hop playlist that's a whole mood...</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Chill Tracks</h4>
-            <p>Softer kinda dance</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Feel-Good Indie Rock</h4>
-            <p>The best indie rock vibes - classic and...</p>
-          </div>
-
-          <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>idk.</h4>
-            <p>idk.</p>
-          </div>
-        </div>
-
-        <hr>
-      </div>
-
-     
-    </div>
 
     <script
       src="https://kit.fontawesome.com/23cecef777.js"
