@@ -10,12 +10,13 @@
 <body>
     <header>
 
-    <ul>
-  <li><a href="default.html">LogIn</a></li>
-  <li><a href="news.asp">LogOut</a></li>
-</ul>  
+    <div class="navbar">
+  <a href="config/login.php">LogIn</a>
+  <a href="config/logout.php">LogOut</a>
+    </div>
 
     </header>
+    
     
 </body>
 
