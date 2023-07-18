@@ -3,7 +3,6 @@
 
 include '../config/connexion.php';
 
-    echo "ppl2";
     $query = 'SELECT * FROM user';
     $userStatement = $baseSpotify->prepare($query);
     $userStatement -> execute();
@@ -12,7 +11,6 @@ include '../config/connexion.php';
 
 <?php
     if (isset($_POST['username'])) {
-        echo "ppl3";
         foreach ($users as $user) {
         if ($user['username'] === $_POST['username']) {
             $loggedUser = [
@@ -23,7 +21,6 @@ include '../config/connexion.php';
         }
     }
     if (!isset($loggedUser)) {
-        echo "ppl4";
         $username = htmlspecialchars($_POST['username']);
             $insertStatement = $baseSpotify -> prepare("INSERT INTO user (username) VALUES (:username)");
             $insertStatement -> execute([
@@ -36,7 +33,6 @@ include '../config/connexion.php';
 
 <?php
 if (isset($_SESSION['LOGGED_USER'])) {
-    echo "ppl5";
     $loggedUser = [
         'username' => $_SESSION['LOGGED_USER'],
     ];
@@ -57,11 +53,9 @@ if (isset($_SESSION['LOGGED_USER'])) {
     <input type="submit" value="Se connecter">
 
 <?php if (!isset($loggedUser)): ?>
-    <?=  "ppl6"; ?>
     <form action="" method="POST">
         <h2>Connectez-vous </h2>
     <?php if(isset($errorMessage)) : ?>
-    <?=  "ppl7"; ?>
 
         <div>
             <?php echo($errorMessage); ?>
