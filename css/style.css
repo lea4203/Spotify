@@ -2,17 +2,23 @@
     padding: 0;
     margin: 0;
   }
+  
   body {
     background-color: #121212;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-flex;
+    align-items: start;
+    justify-content: start;
     height: calc(var(--vH) * 100);
     -webkit-tap-highlight-color: transparent;
     transition: var(--duration) background-color var(--ease-slider);
+    overflow: hidden;
   }
+
+
+
+  /* sidebar home,search etc */
   
   .sidebar {
     position: fixed;
@@ -85,8 +91,10 @@
     margin-bottom: 100px;
   }
   
+  /* topbar connexion et compte */
+
   .topbar {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     background-color: #101010;
     padding: 14px 30px;
@@ -104,7 +112,7 @@
   }
   .topbar .navbar {
     display: flex;
-    align-items: center;
+    align-items: end;
   }
   .topbar .navbar ul {
     list-style: none;
@@ -151,8 +159,7 @@
     background-color: #f2f2f2;
   }
 
-  
-  
+  /*playlis  */
 
   .spotify-playlists {
     padding: 20px 40px;
@@ -171,11 +178,8 @@
     min-width: 140px;
     width: 160px;
     padding: 15px;
-
     background-color: #403b3b;
-
     background-color: #322e2e;
-
     border-radius: 6px;
     cursor: pointer;
     transition: all ease 0.4s;
@@ -279,12 +283,12 @@
   [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: "icomoon" !important;
-    speak: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    
   
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -293,19 +297,19 @@
   
   .icon-back:before {
     content: "\e900";
-    color: #827d7b;
+    color: #2b2320;
   }
   .icon-next:before {
     content: "\e901";
-    color: #827d7b;
+    color: #2b2320;
   }
   .icon-pause:before {
     content: "\e902";
-    color: #fff;
+    color: #2b2320;
   }
   .icon-play:before {
     content: "\e903";
-    color: #fff;
+    color: #130f0f;
   }
   .icon-playlist:before {
     content: "\e904";
@@ -365,7 +369,7 @@
     display: flex;
   }
   .flex-column {
-    display: flex;
+    display: flexbox;
     flex-direction: column;
   }
   ._align_center {
@@ -403,24 +407,19 @@
   }
   
   /* PUBLIC CLASSES */
-  
+
   .music-player {
-    --color-white: #fff;
+    --color-white: #7b7b7b;
     --color-gray: #e5e7ea;
     --color-blue: #78adfe;
     --color-blue-dark: #5781bd;
-  
     --box-shadow: 0 2px 6px 1px #0000001f;
-  
-    --color-text-1: #000;
-    --color-text-2: #0000006b;
-  
+    --color-text-1: #eae1e1;
+    --color-text-2: #a290906b;
     --cover-size: 3.8125em;
     --border-radius: 1.625em;
-  
     --music-player-height: 24.375em;
     --offset-cover: 1.60125em;
-  
     width: 20.9375em;
     overflow: hidden;
     user-select: none;
@@ -428,6 +427,8 @@
     height: var(--music-player-height);
     border-radius: var(--border-radius);
     background-color: var(--color-white);
+  
+
   }
   .slider {
     --shadow-opacity: 1;
@@ -458,6 +459,7 @@
     box-shadow: var(--box-shadow);
     opacity: var(--shadow-opacity);
     transition: var(--duration) opacity;
+    color: #509bf5;
   }
   .slider__content {
     top: 0;
@@ -553,6 +555,7 @@
   .slider__switch-button {
     font-size: 3em;
     height: max-content;
+    color: green;
   }
   .music-player__info {
     width: 56.3%;
