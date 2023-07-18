@@ -101,7 +101,7 @@ include 'config/connexion.php';
 
               <a href="../../compte.php">Mon compte</a>
 
-              <a href="../traitement/compte.php">Mon compte</a>
+            
 
 
             </li>
