@@ -41,33 +41,11 @@
 
     <div class="main-container">
 
-        <div class="topbar">
-            <div class="prev-next-buttons">
-                <button type="button" class="fa fas fa-chevron-left"></button>
-                <button type="button" class="fa fas fa-chevron-right"></button>
-            </div>
-
       <div class="topbar">
         <div class="prev-next-buttons">
           <button type="button" class="fa fas fa-chevron-left"></button>
           <button type="button" class="fa fas fa-chevron-right"></button>
         </div>
-
-        <div class="navbar">
-          <ul>
-           
-            <li>
-              <a href="#"></a>
-            </li>
-            <li class="divider">|</li>
-            <li>
-
-
-              <a href="../traitement/login.php">Se connecter</a>
-            </li>
-            <li>
-
-              <a href="../../compte.php">Mon compte</a>
 
      
             <div class="navbar">
