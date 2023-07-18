@@ -133,8 +133,27 @@
     margin: 0px 20px;
     width: auto;
   }
+
+  .topbar .navbar button {
+    background-color: #ffffff;
+    color: #100e0e6e;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .topbar .navbar button:hover,
+  .topbar .navbar button:active,
+  .topbar .navbar button:focus {
+    background-color: #f2f2f2;
+  }
+
   
   
+
   .spotify-playlists {
     padding: 20px 40px;
   }
@@ -152,7 +171,11 @@
     min-width: 140px;
     width: 160px;
     padding: 15px;
+
+    background-color: #403b3b;
+
     background-color: #322e2e;
+
     border-radius: 6px;
     cursor: pointer;
     transition: all ease 0.4s;

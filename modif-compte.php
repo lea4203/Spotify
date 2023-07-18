@@ -17,4 +17,4 @@ $inserUser -> execute([
         'username' => $newUsername,
         ]);
 $_SESSION['LOGGED_USER'] = $newUsername;};
-header('Location:../traitement/compte.php');
+header('Location:../compte.php');
