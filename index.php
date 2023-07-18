@@ -100,7 +100,7 @@ include 'config/connexion.php';
               <a href="../traitement/login.php">Se connecter</a>
             </li>
             <li>
-              <a href="../traitement/compte.php">Mon compte</a>
+              <a href="../../compte.php">Mon compte</a>
             </li>
           </ul>
         </div>

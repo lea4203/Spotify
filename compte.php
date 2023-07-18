@@ -1,5 +1,5 @@
 <?php
-    include_once('../config/connection.php');
+    include_once('config/connexion.php');
  
     if (!isset($_SESSION['LOGGED_USER'])){
         include_once('traitement/login.php');
