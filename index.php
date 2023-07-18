@@ -74,8 +74,13 @@ include 'config/connexion.php';
                 </div>
             </div>
 
-            <div class="music-player flex-column">
-                <div class="slider center" style="--controls-animate: up running;">
+
+        
+
+                
+
+             <div class="music-player flex-column">"
+               <div class="slider center" style="--controls-animate: up running;">
                     <div class="slider__content center">
                         <button class="music-player__playlist-button center button">
                             <i class="icon-playlist"></i>
@@ -101,6 +106,11 @@ include 'config/connexion.php';
                     </div>
                 </div>
             </div>
+
+      
+            
+
+     
 
             <ul class="music-player__playlist list">
                 <!-- Songs -->
